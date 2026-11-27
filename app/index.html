@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PriceLens · Black Friday 2026 Verified Deal Finder</title>
+  <meta name="description" content="Verified Black Friday 2026 deals with cross-store price comparison, check timestamps, and honest deal-quality signals.">
+  <link rel="stylesheet" href="./styles/dealFinder.css">
+</head>
+<body>
+  <div class="pl-shell">
+    <header class="pl-header">
+      <div class="pl-header-inner">
+        <a class="pl-brand" href="#/" aria-label="PriceLens home">
+          <svg class="pl-logo" viewBox="0 0 28 28" width="28" height="28" aria-hidden="true">
+            <rect x="2" y="2" width="24" height="24" rx="7" fill="#111827"/>
+            <path d="M9 19V9h5.2c2.5 0 4 1.3 4 3.4 0 2.2-1.5 3.5-4 3.5H11.6V19H9zm2.6-5.2h2.3c1.1 0 1.7-.5 1.7-1.4s-.6-1.3-1.7-1.3h-2.3v2.7z" fill="#ffffff"/>
+            <circle cx="20.5" cy="19" r="2.5" fill="#d92d20"/>
+          </svg>
+          <div>
+            <div class="pl-brand-title">PriceLens <span class="pl-tag-bf">BLACK FRIDAY 2026</span></div>
+            <div class="pl-brand-sub">Real-time checked prices · Cross-store comparison · Honest deal signals</div>
+          </div>
+        </a>
+        <div id="pl-kpi-strip" class="pl-kpi-strip" aria-live="polite"></div>
+      </div>
+    </header>
+
+    <main class="pl-main">
+      <section id="pl-toolbar" class="pl-toolbar" aria-label="Search and filters"></section>
+      <section id="pl-results-meta" class="pl-results-meta" aria-live="polite"></section>
+      <section id="pl-deal-grid" class="pl-deal-grid" aria-label="Verified Black Friday deals"></section>
+    </main>
+
+    <footer class="pl-footer">
+      <p><strong>PriceLens Verification Standard:</strong> Every listing shows the exact sale price, usual reference price, computed discount, check time in UTC, and independent source recorded on Nov 27, 2026. Outbound store links open merchant pages directly.</p>
+    </footer>
+  </div>
+
+  <div id="pl-modal-root" class="pl-modal-root" hidden></div>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
